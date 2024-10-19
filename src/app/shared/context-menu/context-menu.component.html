@@ -1,0 +1,11 @@
+<div *ngIf="isVisible()" 
+     [style.left.px]="position?.x" 
+     [style.top.px]="position?.y" 
+     class="context-menu">
+  <ul>
+    <li *ngFor="let item of menuItems" 
+        (click)="selectItem(item.key)">
+      {{ item.label }}
+    </li>
+  </ul>
+</div>
