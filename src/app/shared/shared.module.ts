@@ -3,19 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { ContextMenuComponent } from './context-menu/context-menu.component';
+import { AppHighlightDirective } from './app-highlight.directive';
 
 
 
 @NgModule({
   declarations: [
-    ContextMenuComponent
+    ContextMenuComponent,
+    AppHighlightDirective
   ],
   imports: [
     CommonModule,
     SharedRoutingModule
   ],
   exports:[
-    ContextMenuComponent
+    ContextMenuComponent,
+    AppHighlightDirective
   ]
 })
 export class SharedModule { }

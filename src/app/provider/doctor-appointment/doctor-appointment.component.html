@@ -15,7 +15,7 @@
     </thead>
     <tbody>
       <!-- Open the context menu on right-click by using (contextmenu) instead of (click) -->
-      <tr *ngFor="let appointment of appointments" (click)="onRowClick($event, appointment)">
+      <tr appAppHighlight [index]="i"  *ngFor="let appointment of appointments; let i = index" (click)="onRowClick($event, appointment)">
         <td>{{ appointment.patientName }}</td>
         <td>{{ appointment.patientDob }}</td>
         <td>{{ appointment.appointmentDate }}</td>
