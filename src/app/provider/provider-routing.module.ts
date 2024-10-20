@@ -6,7 +6,7 @@ import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointm
 
 
 const routes: Routes = [
-  { path: 'doctor-appointment', component: DoctorAppointmentComponent } // Define route for the doctor-appointment component
+  { path: 'doctor-appointment', component: DoctorAppointmentComponent } 
 ];
 
 @NgModule({
